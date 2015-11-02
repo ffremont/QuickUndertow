@@ -5,7 +5,7 @@
   <artifactId>QuickUndertow</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <build>
-    <finalName>quick-undertow</finalName>
+    <finalName>http-server-standalone</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>

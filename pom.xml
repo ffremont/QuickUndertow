@@ -55,7 +55,7 @@
     </dependencies>
     
     <build>
-        <finalName>quick-undertow</finalName>
+        <finalName>http-server-standalone</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
