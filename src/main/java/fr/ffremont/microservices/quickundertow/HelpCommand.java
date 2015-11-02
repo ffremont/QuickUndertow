@@ -34,6 +34,7 @@ public class HelpCommand {
         try {
             while ((line = reader.readLine()) != null) {
                 out.write(line.getBytes());
+                out.write(System.getProperty("line.separator").getBytes());
             }
         } catch (IOException ex) {
             LOG.error("Impossible de générer l'aide", ex);
