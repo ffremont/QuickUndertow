@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <virtual-hosts>
+        <virtual-host>
+            <servername>localhost</servername>
+            <port>8080</port>
+            <document-root>/tmp/www</document-root>
+            <listing>true</listing>
+        </virtual-host>
+        <virtual-host>
+            <servername>localhost2</servername>
+            <port>8080</port>
+            <document-root>/tmp/www2</document-root>
+        </virtual-host>
+    </virtual-hosts>
+</configuration>
