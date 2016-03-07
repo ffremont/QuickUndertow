@@ -1,6 +1,5 @@
-# QuickUndertoww
+# QuickUndertoww www
 
-ceci est un texte en +
 
 Serveur HTTP standalone basé sur Undertow
 Florent FREMONT
