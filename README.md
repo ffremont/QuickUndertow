@@ -1,10 +1,4 @@
-# QuickUndertoww www
-
-<<<<<<< HEAD
-=======
-ceci est un texte en +
-ce titre est super
->>>>>>> modif du titre +
+# QuickUndertow
 
 Serveur HTTP standalone basé sur Undertow
 Florent FREMONT
