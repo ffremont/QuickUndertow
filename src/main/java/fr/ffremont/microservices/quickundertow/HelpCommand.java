@@ -28,16 +28,27 @@ public class HelpCommand {
         this.is = is;
     }
     
+    /**
+     * Ecrire l'aide dans l'objet out
+     * 
+     * Si on a rien lu, on part en erreur => Exception
+     */
     public void run(){
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         String line;
+        boolean isRead = false;
         try {
             while ((line = reader.readLine()) != null) {
+                isRead = true;
                 out.write(line.getBytes());
                 out.write(System.getProperty("line.separator").getBytes());
             }
         } catch (IOException ex) {
             LOG.error("Impossible de générer l'aide", ex);
+        }
+        
+        if(!isRead){
+            throw new EmptyFileException("oups");
         }
     }
 

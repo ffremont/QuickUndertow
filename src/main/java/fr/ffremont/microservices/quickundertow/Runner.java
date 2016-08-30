@@ -1,6 +1,9 @@
 package fr.ffremont.microservices.quickundertow;
 
-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -18,11 +21,15 @@ public class Runner {
         String host = System.getProperty("server.host") == null ? StaticServer.DEFAULT_HOST : System.getProperty("server.host");
         int port = System.getProperty("server.port") == null ? StaticServer.DEFAULT_PORT : Integer.valueOf(System.getProperty("server.port"));
         boolean listing = System.getProperty("server.listing") == null ? StaticServer.DEFAULT_LISTING : Boolean.valueOf(System.getProperty("server.listing"));
-        
-        if(args.length == 0){
+        if (args.length == 0) {
             (new StaticServer(host, port, base, listing)).run();
-        }else{
-            (new HelpCommand( Thread.currentThread().getContextClassLoader().getResourceAsStream("help.txt"), System.out)).run();
+        } else {
+                (new HelpCommand(
+                        Thread.currentThread()
+                                .getContextClassLoader()
+                                .getResourceAsStream("help.txt"), System.out)).run();
+            
         }
+
     }
 }
